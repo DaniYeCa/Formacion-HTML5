@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>validaicon</title>
+</head>
+
+
+<body>
+
+    <form action="post" action="/name">
+        <div>
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" minlength="2" maxlength="20" required
+                placeholder="introduce tu nombre">
+        </div>
+        <div>
+            <label for="age">edad:</label>
+            <input type="number" name="age" id="age" min="15" max="99" required>
+        </div>
+        <button type="submit">enviar</button>
+    </form>
+
+
+    <form action="post" action="/name">
+        <fieldset>
+            <legend>datos correo</legend>
+            <label for="email">correo</label>
+            <input type="email" name="email" id="email" required>
+        </fieldset>
+        <fieldset>
+            <legend>datos user</legend>
+            <label for="name_user">correo</label>
+            <input type="text" name="name_user" id="name_user" required pattern="[A-Za-z1-9]+">
+        </fieldset>
+        <fieldset>
+            <label for="car">Audi</label>
+            <input type="text" name="car" id="car" required title="modelos disponible: A1, A4 y A5"
+                pattern="A|a(1|4|5)">
+        </fieldset>
+    </form>
+</body>
+
+
+</html>
